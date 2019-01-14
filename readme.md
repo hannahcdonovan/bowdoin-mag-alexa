@@ -1,3 +1,3 @@
-# Audio Stream Starter - Skill Template
+# Bowdoin Magazine Podcast
 
-This is a starter template for creating an Alexa audio streaming skill.
+This is an Alexa Skill for the Bowdoin Magazine Podcast. 

@@ -1,7 +1,7 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "",
+      "skill_id": "amzn1.ask.skill.9d7180e3-0b63-4729-85f5-63e5e9f5195d",
       "was_cloned": false,
       "merge": {
         "manifest": {
@@ -17,15 +17,26 @@
       "in_skill_products": [],
       "resources": {
         "manifest": {
-          "eTag": ""
+          "eTag": "4e6ae3861dde689a6e968cf66edf6490"
         },
         "interactionModel": {
           "en-US": {
-            "eTag": ""
+            "eTag": "5d622de32334c62da0178d4c862f12d2"
           }
         },
         "lambda": [
-
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-west-2:641387687280:function:ask-custom-audio-stream-starter-default",
+            "awsRegion": "us-west-2",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-audio-stream-starter-default",
+            "handler": "index.handler",
+            "revisionId": "897db316-2a16-48b5-8a8d-16d84dcc8d25",
+            "runtime": "nodejs8.10"
+          }
         ]
       }
     }

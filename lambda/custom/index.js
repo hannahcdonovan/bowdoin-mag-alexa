@@ -6,9 +6,9 @@ const Alexa = require('ask-sdk-core');
 const STREAMS = [
   {
     "token": "stream-12",
-    "url": 'https://streaming.radionomy.com/RadioXUS?lang=en-US&appName=iTunes.m3u',
+    "url": 'https://www.bowdoin.edu/communications/magazine-podcast/podcast.m3u',
     "metadata" : {
-      "title": "Stream One",
+      "title": "Bowdoin Podcast Episode One",
       "subtitle": "A subtitle for stream one",
       "art": {
         "sources": [
@@ -48,7 +48,7 @@ const PlayStreamIntentHandler = {
 
     handlerInput.responseBuilder
       .speak(`starting ${stream.metadata.title}`)
-      .addAudioPlayerPlayDirective('REPLACE_ALL', stream.url, stream.token, 0, null, stream.metadata);
+      .addAudioPlayerPlayDirective('REPLACE_ALL', stream.url, stream.token, 0, null);
 
     return handlerInput.responseBuilder
       .getResponse();
